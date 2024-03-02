@@ -4,7 +4,6 @@ import streamlit as st
 import google.generativeai as genai
 import google.ai.generativelanguage as glm
 from dotenv import load_dotenv
-# from PIL import Image
 
 load_dotenv()
 
@@ -60,3 +59,4 @@ if user_prompt:
 
     with st.chat_message("assistant",avatar=BOT_AVATAR):
         st.markdown(gemini_response.text)
+    
